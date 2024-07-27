@@ -1,0 +1,7 @@
+[package]
+name = "truco_domain_wrapper"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+truco_domain_engine = { git = "https://github.com/Mirkopoj/truco_state_pattern.git" }
