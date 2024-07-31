@@ -128,7 +128,6 @@ dependencies = [
 [[package]]
 name = "truco_domain_engine"
 version = "0.1.0"
-source = "git+https://github.com/Mirkopoj/truco_state_pattern.git#f38d15587e0fb98882f9b2233c804a8ab19588ba"
 dependencies = [
  "enum-iterator",
  "itertools",

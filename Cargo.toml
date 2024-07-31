@@ -7,4 +7,4 @@ edition = "2021"
 crate-type = ["staticlib"]
 
 [dependencies]
-truco_domain_engine = { git = "https://github.com/Mirkopoj/truco_state_pattern.git" }
+truco_domain_engine = { path = "../truco_domain_engine" }

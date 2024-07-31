@@ -98,14 +98,14 @@ pub unsafe extern "C" fn irse_al_maso(ptr: *const Truco, player: *const c_char) 
 /// # Safety
 #[no_mangle]
 pub unsafe extern "C" fn cantar_quiero(ptr: *const Truco, player: *const c_char) -> CResult {
-        assert!(!ptr.is_null());
-        let c_str = CStr::from_ptr(player);
-        let player = match c_str.to_str() {
-            Ok(s) => s,
-            Err(e) => return CResult::new(Err(&e.to_string())),
-        };
-        let ret = (*ptr.cast_mut()).cantar_quiero(player);
-        CResult::new(ret)
+    assert!(!ptr.is_null());
+    let c_str = CStr::from_ptr(player);
+    let player = match c_str.to_str() {
+        Ok(s) => s,
+        Err(e) => return CResult::new(Err(&e.to_string())),
+    };
+    let ret = (*ptr.cast_mut()).cantar_quiero(player);
+    CResult::new(ret)
 }
 
 /// # Errors
@@ -113,14 +113,14 @@ pub unsafe extern "C" fn cantar_quiero(ptr: *const Truco, player: *const c_char)
 /// # Safety
 #[no_mangle]
 pub unsafe extern "C" fn cantar_no_quiero(ptr: *const Truco, player: *const c_char) -> CResult {
-        assert!(!ptr.is_null());
-        let c_str = CStr::from_ptr(player);
-        let player = match c_str.to_str() {
-            Ok(s) => s,
-            Err(e) => return CResult::new(Err(&e.to_string())),
-        };
-        let ret = (*ptr.cast_mut()).cantar_no_quiero(player);
-        CResult::new(ret)
+    assert!(!ptr.is_null());
+    let c_str = CStr::from_ptr(player);
+    let player = match c_str.to_str() {
+        Ok(s) => s,
+        Err(e) => return CResult::new(Err(&e.to_string())),
+    };
+    let ret = (*ptr.cast_mut()).cantar_no_quiero(player);
+    CResult::new(ret)
 }
 
 /// # Errors
@@ -128,14 +128,14 @@ pub unsafe extern "C" fn cantar_no_quiero(ptr: *const Truco, player: *const c_ch
 /// # Safety
 #[no_mangle]
 pub unsafe extern "C" fn cantar_envido(ptr: *const Truco, player: *const c_char) -> CResult {
-        assert!(!ptr.is_null());
-        let c_str = CStr::from_ptr(player);
-        let player = match c_str.to_str() {
-            Ok(s) => s,
-            Err(e) => return CResult::new(Err(&e.to_string())),
-        };
-        let ret = (*ptr.cast_mut()).cantar_envido(player);
-        CResult::new(ret)
+    assert!(!ptr.is_null());
+    let c_str = CStr::from_ptr(player);
+    let player = match c_str.to_str() {
+        Ok(s) => s,
+        Err(e) => return CResult::new(Err(&e.to_string())),
+    };
+    let ret = (*ptr.cast_mut()).cantar_envido(player);
+    CResult::new(ret)
 }
 
 /// # Errors
@@ -143,14 +143,14 @@ pub unsafe extern "C" fn cantar_envido(ptr: *const Truco, player: *const c_char)
 /// # Safety
 #[no_mangle]
 pub unsafe extern "C" fn cantar_real_envido(ptr: *const Truco, player: *const c_char) -> CResult {
-        assert!(!ptr.is_null());
-        let c_str = CStr::from_ptr(player);
-        let player = match c_str.to_str() {
-            Ok(s) => s,
-            Err(e) => return CResult::new(Err(&e.to_string())),
-        };
-        let ret = (*ptr.cast_mut()).cantar_real_envido(player);
-        CResult::new(ret)
+    assert!(!ptr.is_null());
+    let c_str = CStr::from_ptr(player);
+    let player = match c_str.to_str() {
+        Ok(s) => s,
+        Err(e) => return CResult::new(Err(&e.to_string())),
+    };
+    let ret = (*ptr.cast_mut()).cantar_real_envido(player);
+    CResult::new(ret)
 }
 
 /// # Errors
@@ -158,14 +158,14 @@ pub unsafe extern "C" fn cantar_real_envido(ptr: *const Truco, player: *const c_
 /// # Safety
 #[no_mangle]
 pub unsafe extern "C" fn cantar_falta_envido(ptr: *const Truco, player: *const c_char) -> CResult {
-        assert!(!ptr.is_null());
-        let c_str = CStr::from_ptr(player);
-        let player = match c_str.to_str() {
-            Ok(s) => s,
-            Err(e) => return CResult::new(Err(&e.to_string())),
-        };
-        let ret = (*ptr.cast_mut()).cantar_falta_envido(player);
-        CResult::new(ret)
+    assert!(!ptr.is_null());
+    let c_str = CStr::from_ptr(player);
+    let player = match c_str.to_str() {
+        Ok(s) => s,
+        Err(e) => return CResult::new(Err(&e.to_string())),
+    };
+    let ret = (*ptr.cast_mut()).cantar_falta_envido(player);
+    CResult::new(ret)
 }
 
 /// # Errors
@@ -188,14 +188,14 @@ pub unsafe extern "C" fn cantar_truco(ptr: *const Truco, player: *const c_char) 
 /// # Safety
 #[no_mangle]
 pub unsafe extern "C" fn cantar_re_truco(ptr: *const Truco, player: *const c_char) -> CResult {
-        assert!(!ptr.is_null());
-        let c_str = CStr::from_ptr(player);
-        let player = match c_str.to_str() {
-            Ok(s) => s,
-            Err(e) => return CResult::new(Err(&e.to_string())),
-        };
-        let ret = (*ptr.cast_mut()).cantar_re_truco(player);
-        CResult::new(ret)
+    assert!(!ptr.is_null());
+    let c_str = CStr::from_ptr(player);
+    let player = match c_str.to_str() {
+        Ok(s) => s,
+        Err(e) => return CResult::new(Err(&e.to_string())),
+    };
+    let ret = (*ptr.cast_mut()).cantar_re_truco(player);
+    CResult::new(ret)
 }
 
 /// # Errors
@@ -203,29 +203,33 @@ pub unsafe extern "C" fn cantar_re_truco(ptr: *const Truco, player: *const c_cha
 /// # Safety
 #[no_mangle]
 pub unsafe extern "C" fn cantar_vale_cuatro(ptr: *const Truco, player: *const c_char) -> CResult {
-        assert!(!ptr.is_null());
-        let c_str = CStr::from_ptr(player);
-        let player = match c_str.to_str() {
-            Ok(s) => s,
-            Err(e) => return CResult::new(Err(&e.to_string())),
-        };
-        let ret = (*ptr.cast_mut()).cantar_vale_cuatro(player);
-        CResult::new(ret)
+    assert!(!ptr.is_null());
+    let c_str = CStr::from_ptr(player);
+    let player = match c_str.to_str() {
+        Ok(s) => s,
+        Err(e) => return CResult::new(Err(&e.to_string())),
+    };
+    let ret = (*ptr.cast_mut()).cantar_vale_cuatro(player);
+    CResult::new(ret)
 }
 
 /// # Errors
 /// # Panics
 /// # Safety
 #[no_mangle]
-pub unsafe extern "C" fn tirar_carta(ptr: *const Truco, player: *const c_char, card: usize) -> CResult {
-        assert!(!ptr.is_null());
-        let c_str = CStr::from_ptr(player);
-        let player = match c_str.to_str() {
-            Ok(s) => s,
-            Err(e) => return CResult::new(Err(&e.to_string())),
-        };
-        let ret = (*ptr.cast_mut()).tirar_carta(player, card);
-        CResult::new(ret)
+pub unsafe extern "C" fn tirar_carta(
+    ptr: *const Truco,
+    player: *const c_char,
+    card: usize,
+) -> CResult {
+    assert!(!ptr.is_null());
+    let c_str = CStr::from_ptr(player);
+    let player = match c_str.to_str() {
+        Ok(s) => s,
+        Err(e) => return CResult::new(Err(&e.to_string())),
+    };
+    let ret = (*ptr.cast_mut()).tirar_carta(player, card);
+    CResult::new(ret)
 }
 
 #[repr(C)]
@@ -270,14 +274,17 @@ pub extern "C" fn free_string_array(array: CStringArray) {
 }
 
 /// # Panics
+/// # Safety
 #[no_mangle]
-pub extern "C" fn valid_commands(ptr: *const Truco, player: *const c_char) -> CStringArray {
-    unsafe {
-        assert!(!ptr.is_null());
-        let player = CString::from_raw(player.cast_mut()).into_string().unwrap();
-        let ret = (*ptr.cast_mut()).valid_commands(&player);
-        CStringArray::from_vec(ret)
-    }
+pub unsafe extern "C" fn valid_commands(ptr: *const Truco, player: *const c_char) -> CStringArray {
+    assert!(!ptr.is_null());
+    let c_str = CStr::from_ptr(player);
+    let player = match c_str.to_str() {
+        Ok(s) => s,
+        Err(e) => return CStringArray::from_vec(vec![e.to_string()]),
+    };
+    let ret = (*ptr.cast_mut()).valid_commands(player);
+    CStringArray::from_vec(ret)
 }
 
 /// # Panics
@@ -296,6 +303,39 @@ pub extern "C" fn ganador(ptr: *const Truco) -> COptionEquipo {
         assert!(!ptr.is_null());
         let res = (*ptr.cast_mut()).ganador();
         COptionEquipo::new(res)
+    }
+}
+
+/// # Panics
+#[no_mangle]
+pub extern "C" fn print_state(ptr: *const Truco) -> *const c_char {
+    unsafe {
+        assert!(!ptr.is_null());
+        let res = (*ptr.cast_mut()).print_state();
+        str_to_c_char(&res)
+    }
+}
+
+/// # Panics
+/// # Safety
+#[no_mangle]
+pub unsafe extern "C" fn print_player(ptr: *const Truco, player: *const c_char) -> CResult {
+    assert!(!ptr.is_null());
+    let c_str = CStr::from_ptr(player);
+    let player = match c_str.to_str() {
+        Ok(s) => s,
+        Err(e) => return CResult::new(Err(&e.to_string())),
+    };
+    let res = (*ptr.cast_mut()).print_player(player);
+    match res {
+        Ok(s) => CResult {
+            tag: ResultEnum::Ok,
+            error: str_to_c_char(&s),
+        },
+        Err(s) => CResult {
+            tag: ResultEnum::Err,
+            error: str_to_c_char(s),
+        },
     }
 }
 
@@ -324,12 +364,13 @@ pub extern "C" fn new_truco_builder() -> *const TrucoBuilderEnum {
 }
 
 /// # Panics
+/// # Safety
 #[no_mangle]
-pub extern "C" fn add_player(ptr: *const TrucoBuilderEnum, player: *const c_char) {
-    unsafe {
-        assert!(!ptr.is_null());
-        let player = CString::from_raw(player.cast_mut()).into_string().unwrap();
-        let current_value = std::ptr::read(ptr.cast_mut());
+pub unsafe extern "C" fn add_player(ptr: *const TrucoBuilderEnum, player: *const c_char) {
+    assert!(!ptr.is_null());
+    let c_str = CStr::from_ptr(player);
+    if let Ok(player) = c_str.to_str() {
+        let current_value = std::ptr::read(ptr);
         let ret = match current_value {
             TrucoBuilderEnum::SinCero(tb) => TrucoBuilderEnum::SinUno(tb.add_player(player)),
             TrucoBuilderEnum::SinUno(tb) => TrucoBuilderEnum::SinDos(tb.add_player(player)),
@@ -351,29 +392,28 @@ pub extern "C" fn add_player(ptr: *const TrucoBuilderEnum, player: *const c_char
 }
 
 /// # Panics
+/// # Safety
 #[no_mangle]
-pub extern "C" fn hasta(ptr: *const TrucoBuilderEnum, hasta: u8) {
-    unsafe {
-        assert!(!ptr.is_null());
-        let current_value = std::ptr::read(ptr.cast_mut());
-        let ret = match current_value {
-            TrucoBuilderEnum::SinCero(tb) => TrucoBuilderEnum::ConCero(tb.hasta(hasta)),
-            TrucoBuilderEnum::SinUno(tb) => TrucoBuilderEnum::ConUno(tb.hasta(hasta)),
-            TrucoBuilderEnum::SinDos(tb) => TrucoBuilderEnum::ConDos(tb.hasta(hasta)),
-            TrucoBuilderEnum::SinTres(tb) => TrucoBuilderEnum::ConTres(tb.hasta(hasta)),
-            TrucoBuilderEnum::SinCuatro(tb) => TrucoBuilderEnum::ConCuatro(tb.hasta(hasta)),
-            TrucoBuilderEnum::SinCinco(tb) => TrucoBuilderEnum::ConCinco(tb.hasta(hasta)),
-            TrucoBuilderEnum::SinSeis(tb) => TrucoBuilderEnum::ConSeis(tb.hasta(hasta)),
-            TrucoBuilderEnum::ConCero(tb) => TrucoBuilderEnum::ConCero(tb),
-            TrucoBuilderEnum::ConUno(tb) => TrucoBuilderEnum::ConUno(tb),
-            TrucoBuilderEnum::ConDos(tb) => TrucoBuilderEnum::ConDos(tb),
-            TrucoBuilderEnum::ConTres(tb) => TrucoBuilderEnum::ConTres(tb),
-            TrucoBuilderEnum::ConCuatro(tb) => TrucoBuilderEnum::ConCuatro(tb),
-            TrucoBuilderEnum::ConCinco(tb) => TrucoBuilderEnum::ConCinco(tb),
-            TrucoBuilderEnum::ConSeis(tb) => TrucoBuilderEnum::ConSeis(tb),
-        };
-        std::ptr::write(ptr.cast_mut(), ret);
-    }
+pub unsafe extern "C" fn hasta(ptr: *const TrucoBuilderEnum, hasta: u8) {
+    assert!(!ptr.is_null());
+    let current_value = std::ptr::read(ptr);
+    let ret = match current_value {
+        TrucoBuilderEnum::SinCero(tb) => TrucoBuilderEnum::ConCero(tb.hasta(hasta)),
+        TrucoBuilderEnum::SinUno(tb) => TrucoBuilderEnum::ConUno(tb.hasta(hasta)),
+        TrucoBuilderEnum::SinDos(tb) => TrucoBuilderEnum::ConDos(tb.hasta(hasta)),
+        TrucoBuilderEnum::SinTres(tb) => TrucoBuilderEnum::ConTres(tb.hasta(hasta)),
+        TrucoBuilderEnum::SinCuatro(tb) => TrucoBuilderEnum::ConCuatro(tb.hasta(hasta)),
+        TrucoBuilderEnum::SinCinco(tb) => TrucoBuilderEnum::ConCinco(tb.hasta(hasta)),
+        TrucoBuilderEnum::SinSeis(tb) => TrucoBuilderEnum::ConSeis(tb.hasta(hasta)),
+        TrucoBuilderEnum::ConCero(tb) => TrucoBuilderEnum::ConCero(tb),
+        TrucoBuilderEnum::ConUno(tb) => TrucoBuilderEnum::ConUno(tb),
+        TrucoBuilderEnum::ConDos(tb) => TrucoBuilderEnum::ConDos(tb),
+        TrucoBuilderEnum::ConTres(tb) => TrucoBuilderEnum::ConTres(tb),
+        TrucoBuilderEnum::ConCuatro(tb) => TrucoBuilderEnum::ConCuatro(tb),
+        TrucoBuilderEnum::ConCinco(tb) => TrucoBuilderEnum::ConCinco(tb),
+        TrucoBuilderEnum::ConSeis(tb) => TrucoBuilderEnum::ConSeis(tb),
+    };
+    std::ptr::write(ptr.cast_mut(), ret);
 }
 
 #[repr(C)]
